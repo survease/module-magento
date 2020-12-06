@@ -1,6 +1,14 @@
 {
     "name": "survease/module-survey",
     "description": "Magento module responsible for interaction with Survease (c) app",
+    "license": ["MIT"],
+    "authors": [
+        {
+            "name": "Andrei Lukkonen",
+            "email": "athrin.freedom@gmail.com",
+            "homepage": "https://survease.com"
+        }
+    ],
     "require": {
         "php": "^7.0",
         "magento/framework": "2.*"
