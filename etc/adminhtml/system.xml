@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="survey" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Survease</label>
+            <tab>customer</tab>
+            <resource>Survease_Survey::setup</resource>
+            <group id="authorization" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Authorization</label>
+                <field id="api_token" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Api Token</label>
+                </field>
+            </group>
+            <group id="general" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General</label>
+                <field id="survey_id" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Survey</label>
+                    <comment>ID of the survey where to submit invitations</comment>
+                    <validate>required-entry no-whitespace</validate>
+                </field>
+                <field id="defer" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Delay invitation dispatch</label>
+                    <comment>Delay the invitations dispatch to a set number of days. Example: send invitation 5 days after the order was complete</comment>
+                    <validate>integer</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
