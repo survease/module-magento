@@ -1,6 +1,7 @@
 {
     "name": "survease/module-survey",
     "description": "Magento module responsible for interaction with Survease (c) app",
+    "version": "0.1",
     "require": {
         "php": "^7.0",
         "magento/framework": "2.*"
@@ -14,5 +15,5 @@
             "Survease\\Survey": ""
         }
     },
-    "version": "0.1"
+    "minimum-stability": "stable"
 }
