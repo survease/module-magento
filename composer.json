@@ -11,7 +11,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "Survease\\Survey": ""
+            "Survease\\Survey\\": ""
         }
     },
     "minimum-stability": "stable"
